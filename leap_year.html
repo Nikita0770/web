@@ -1,0 +1,9 @@
+<script>
+	var year = prompt("Введите год");
+	year = parseInt(year);
+	if((year%4==0 && year%100!=0) || year%400==0){
+		alert("Вы ввели високосный год");
+	} else {
+		alert("Вы ввели не високосный год");
+	}
+</script>
