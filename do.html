@@ -1,0 +1,19 @@
+<script>
+	var x=Math.random();
+	x=x*100;
+	x=Math.floor(x);
+	console.log(x);
+	for (var i = 1; i <= 10; i++) {
+		var num=prompt("Enter your number");
+		num=parseInt(num);
+		if(x!=num){
+			alert("Enter your number one more time, tries left: "+(10-i));
+		}else{
+			alert("You`ve guessed the number");
+			break;
+		}
+	}
+	if(x!=num){
+		alert("You lost, my number is "+x);
+	}
+</script>
