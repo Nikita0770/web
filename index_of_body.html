@@ -1,0 +1,25 @@
+<script>
+	var weight = prompt("Введите вес тела");
+	weight = parseInt(weight);
+	
+	var height = prompt("Введите ваш рост");
+	height = parseInt(height);
+	var h1= height/100;
+	var res = weight/(h1*h1);
+	if(res<=16){
+		console.log("Index: "+ res +" Выраженный дефицит массы тела");
+	}else if(res<18.5){
+		console.log("Index: "+ res +" Недостаточная (дефицит) масса тела");
+	}else if(res<25){
+		console.log("Index: "+ res +" Норма");
+	} else if(res<30){
+		console.log("Index: "+ res +" Избыточная масса тела (предожирение)");
+	} else if(res<35){
+		console.log("Index: "+ res +" Ожирение");
+	} else if(res<40){
+		console.log("Index: "+ res +" Ожирение резкое");
+	} else {
+		console.log("Очень резкое ожирение");
+	}
+	
+</script>
