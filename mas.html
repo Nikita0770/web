@@ -1,0 +1,31 @@
+
+<script>
+
+	//Массив хранит курс доллара по дням за месяц.
+	var usd =  [26.4, 24.54, 26.08, 24.06, 25.27, 25.24, 24.61, 26.81, 24.12, 25.8, 25.5, 24.59, 26.67, 26.74, 25.79, 24.28, 26.12, 26.58, 24.27, 24.36, 24.97, 25.51, 25.23, 26.33, 26.7, 24.4, 25.25, 26.98, 25.51, 24.49]; 
+	
+	//Дальше можно писать код
+
+	var uah=[];
+	for (var i = 0; i < usd.length; i++) {
+		var rate=1/usd[i];
+		uah.push(rate);
+	}
+	console.log(uah);
+	/*
+	var max=usd[0];
+	var min=usd[0];
+	for (var i = 0; i < usd.length; i++) {
+		if(max<usd[i]){
+			max=usd[i];
+		}
+		if(min>usd[i]){
+			min=usd[i];
+		}
+	}		
+	
+	console.log(max);
+	console.log(min);
+	console.log(usd.sort());	
+	*/
+</script>
