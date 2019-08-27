@@ -1,0 +1,13 @@
+<script>
+	var sum, term, rate;
+	var pr, nsum;
+	sum=1000;
+	rate=12;//%
+	term=12;
+
+	for ( i = 1; i <=term ; i++) {
+		pr=sum*rate/12/100;
+		sum+=pr;
+		console.log("Month: "+i+"sum "+sum);
+	}
+</script>
