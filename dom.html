@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+    <title>Hello DOM!</title>
+    <script >
+    	setTimeout(function() {
+    		var tag = document.querySelector("h1");
+    		//tag.className = "alert alert-danger";
+    		//tag.style.textAlign = "center";
+    		tag.classList.add("alert");
+    		tag.classList.add("alert-success");
+    	},5000);
+    </script>
+  </head>
+  <body>
+  		
+		<div class="container mt-5">
+			
+			<h1 class="text-center">Hello DOM!</h1>
+			
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a aliquet metus. Cras luctus metus velit, ac rhoncus velit scelerisque non. Etiam vitae condimentum sem. Maecenas at egestas dui.</p>
+			
+			<div class="text-center mt-3 mb-3">
+				<img src="http://files.courses.dp.ua/web/js/image_2.jpg" id="photo"class="img-thumbnail w-100">
+			</div>
+			
+			<p class="text-justify" id="special">Integer lobortis metus enim, tincidunt sagittis nibh pretium id. Integer sodales finibus iaculis. In quis ex magna. Aenean nec porta eros. Integer dapibus, nulla ac egestas viverra, orci massa pharetra felis, eu sodales sapien metus ac dolor. Curabitur venenatis iaculis metus. Pellentesque diam nisi, dictum et sodales vitae, auctor et mauris. Aliquam at tortor eu diam congue auctor sed fringilla massa. Aliquam erat volutpat.</p>
+			
+			<p class="text-justify">Aliquam tempus lacus in neque dapibus, id sodales sem sodales. Duis eros magna, convallis nec placerat eu, sollicitudin in turpis. Proin luctus mollis varius. Donec ornare eu sapien nec dapibus. Nunc cursus, nulla eget iaculis mollis, enim enim ornare odio, in scelerisque ipsum lacus at dui. Nullam finibus pharetra erat, a dapibus est lacinia sed. Nunc tempus mi rutrum est interdum egestas. Suspendisse vel metus quis metus pharetra auctor. Suspendisse eu felis augue. Sed in vehicula tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur eget dui ut dapibus. Sed non libero ullamcorper, sodales mi vitae, cursus odio. Proin vel velit auctor, pulvinar purus sed, aliquam arcu. Sed eu aliquet diam. Duis sed nulla a leo rutrum viverra eget ac metus.</p>
+						
+		</div>
+    
+  </body>
+</html>
