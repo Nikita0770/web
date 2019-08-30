@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#test{
+			transition: 1.5s;
+		}
+		.special{
+			color:red;
+			border: 2px solid blue;
+			border-radius: 25px;
+		}
+	</style>
+</head>
+<body>
+	<h1 onclick="move()" id="test">Hello World</h1>
+	<script >
+		function move() {
+			test.className="special";
+		}
+		function timer_demo() {
+
+		}
+		setTimeout(function() {test.style.background="yellow";} ,3000);
+		
+	</script>
+</body>
+</html>
