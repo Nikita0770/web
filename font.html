@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+	<style>
+		article {
+			font-size: 14pt;
+		}
+		
+		.control {
+			text-align: right;
+			margin: 10px;
+			font-weight: bold;
+			padding: 5px;
+		}
+		.control > span {
+			border: 2px solid #ccc;
+			padding: 10px;
+		}
+	</style>
+	<script>
+		function color_change() {
+			var color = back_color.value;
+			var tag=document.querySelector("body");
+			tag.style.background=color;
+		}
+		function font_change() {
+			var size = font_size.value;
+			var tag=document.querySelector("article");
+			tag.style.fontSize=size+"pt";
+		}
+
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Bootstrap blog page</h1>
+		<div class="control">
+			<span>
+			Размер шрифта: <input oninput="font_change()" id="font_size" type="number" min="12" max="48" value="14"> pt. 
+			&nbsp;&nbsp; 
+			Фон текста <input oninput="color_change()" id="back_color" type="color" value="#ffffff"> 
+			</span>
+		</div>
+		<article class="text-justify">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue ullamcorper maximus. Curabitur sed quam dapibus, vestibulum felis in, suscipit lacus. Suspendisse eget porttitor felis. Etiam eleifend dui et nunc efficitur, sed euismod lorem molestie. Praesent porttitor sapien sed turpis commodo, at semper libero ullamcorper. Aliquam euismod cursus ornare. Donec faucibus risus in arcu maximus, nec convallis massa tempor. Ut pharetra sapien a libero elementum lobortis. Proin eu ante vestibulum, varius arcu condimentum, maximus diam. Phasellus id malesuada lacus. Suspendisse in risus non sapien tristique pellentesque sodales et eros. Nullam bibendum quam sed posuere sollicitudin. Ut tempus lectus id purus dignissim ultricies. Quisque vitae iaculis turpis, vitae pulvinar augue. Fusce nec luctus dui. Cras facilisis diam sit amet ornare pulvinar.</p>
+			<p>Vivamus tincidunt massa id efficitur tristique. Mauris accumsan, diam vel aliquet vulputate, odio lectus pellentesque tellus, quis dictum dolor odio sit amet metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum massa sed elit pellentesque sodales. Donec aliquet varius ante eu faucibus. Curabitur iaculis, nibh sit amet hendrerit suscipit, diam dui finibus nisl, sit amet mattis odio leo eu tortor. Aliquam rutrum velit a justo aliquet sodales. Mauris accumsan ligula eu sollicitudin gravida.</p>
+			<p>Nunc in lobortis est. Ut ac nisl lectus. Sed at felis sed sapien viverra feugiat egestas eu ligula. Fusce pellentesque id mauris a faucibus. In scelerisque, justo ut placerat fermentum, risus lectus tincidunt turpis, eget venenatis ipsum nisi eget urna. Aenean vehicula velit nec risus consectetur, non pulvinar leo cursus. Nulla neque urna, euismod ut metus non, cursus eleifend lacus. Maecenas sit amet nulla nibh. Curabitur ipsum ipsum, tempus sed facilisis ac, hendrerit eget felis. Nam eu justo nec ante facilisis rhoncus ac et dolor.</p>
+			<p>Sed euismod ut lacus sed bibendum. Pellentesque semper, lacus sed ultrices sollicitudin, lectus mi pharetra odio, a posuere nisl odio ac orci. Nam convallis dui nec turpis dignissim, in maximus metus dapibus. Nam tempus mollis dolor non consequat. Sed ullamcorper hendrerit diam quis lobortis. Proin mauris tortor, laoreet nec metus sit amet, rhoncus egestas sem. Aenean malesuada porta arcu et tempor.</p>
+			<p>Nulla a faucibus justo, ut imperdiet erat. Proin molestie sem nulla, quis malesuada libero scelerisque at. Ut interdum nibh magna, et luctus magna vulputate vel. Donec accumsan varius consequat. Morbi a sapien vel ante ornare semper. Aliquam eros turpis, blandit vel arcu vitae, facilisis vulputate augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque non ullamcorper arcu. Praesent dignissim odio id tellus accumsan eleifend.</p>
+		</article>
+		
+    </div>
+</body>
+</html>
+
+
+
+
+
