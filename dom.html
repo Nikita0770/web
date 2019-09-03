@@ -7,17 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+	<style>
+	h1{
+		cursor:pointer;
+	}
+	</style>
     <title>Hello DOM!</title>
-    <script >
-    	setTimeout(function() {
-    		var tag = document.querySelector("h1");
-    		//tag.className = "alert alert-danger";
-    		//tag.style.textAlign = "center";
-    		tag.classList.add("alert");
-    		tag.classList.add("alert-success");
-    	},5000);
-    </script>
   </head>
   <body>
   		
@@ -36,6 +31,29 @@
 			<p class="text-justify">Aliquam tempus lacus in neque dapibus, id sodales sem sodales. Duis eros magna, convallis nec placerat eu, sollicitudin in turpis. Proin luctus mollis varius. Donec ornare eu sapien nec dapibus. Nunc cursus, nulla eget iaculis mollis, enim enim ornare odio, in scelerisque ipsum lacus at dui. Nullam finibus pharetra erat, a dapibus est lacinia sed. Nunc tempus mi rutrum est interdum egestas. Suspendisse vel metus quis metus pharetra auctor. Suspendisse eu felis augue. Sed in vehicula tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur eget dui ut dapibus. Sed non libero ullamcorper, sodales mi vitae, cursus odio. Proin vel velit auctor, pulvinar purus sed, aliquam arcu. Sed eu aliquet diam. Duis sed nulla a leo rutrum viverra eget ac metus.</p>
 						
 		</div>
-    
+		<script>
+		
+		var all_p = document.querySelectorAll("p");
+		for(var i=0; i < all_p.length;i++){
+			all_p[i].onclick=function(){
+				this.classList.toggle("alert");
+				this.classList.toggle("alert-success");
+			}
+		}
+		
+		/*
+		var h1=document.querySelector("h1");
+		
+		h1.onclick=function(){
+		var tag =document.querySelectorAll("p");
+	
+		for(var i=0;i<tag.length;i++){
+				tag[i].classList.toggle("alert");
+				tag[i].classList.toggle("alert-success");
+				}
+			
+		}
+*/
+	</script>
   </body>
 </html>
