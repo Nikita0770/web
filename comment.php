@@ -1,7 +1,7 @@
 <?php
 	
 	$data = $_REQUEST['message'];
-	
+	$data= htmlspecialchars($data);
 	
 	
 	if (strlen($data)>2){
